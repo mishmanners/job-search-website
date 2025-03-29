@@ -1,0 +1,141 @@
+/* This file contains the styles for the website. It defines the layout, colors, fonts, and other visual aspects of the webpage. */
+:root {
+    --primary-dark: #1a2634;
+    --primary: #233446;
+    --primary-light: #2c4257;
+    --accent: #4a90e2;
+    --text-light: #ffffff;
+    --text-muted: #b0b8c1;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --hot-pink: #ff69b4;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+header {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+h1 {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.search-bar {
+    margin: 30px 0;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 15px;
+    border: 2px solid var(--primary-light);
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--text-light);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+}
+
+button {
+    padding: 15px 30px;
+    background: var(--accent);
+    color: var(--text-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.job-list {
+    list-style: none;
+    padding: 0;
+}
+
+.job-list li {
+    background: var(--primary);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--primary-light);
+}
+
+.job-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px var(--shadow);
+    background: var(--primary-light);
+}
+
+a {
+    color: var(--hot-pink);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ff8cc6;
+    text-decoration: underline;
+}
+
+.nav-links a {
+    color: var(--hot-pink);
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 105, 180, 0.1);
+}
+
+.nav-links a.active {
+    color: #ff8cc6;
+    border-bottom: 2px solid var(--hot-pink);
+}
+
+.footer-section a {
+    color: var(--hot-pink);
+    display: block;
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: var(--hot-pink);
+    font-size: 24px;
+    margin: 0 10px;
+}

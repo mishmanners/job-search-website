@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <i class="fas fa-briefcase"></i>
+                <h1>Rayin's Job Search</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Saved Jobs</a>
+                <a href="#">Profile</a>
+            </div>
+        </nav>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-bar" placeholder="Search for job opportunities...">
+                <button type="submit">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+            <div class="filter-options">
+                <select id="location">
+                    <option value="">Location</option>
+                    <option value="remote">Remote</option>
+                    <option value="onsite">On-site</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+                <select id="job-type">
+                    <option value="">Job Type</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="contract">Contract</option>
+                </select>
+                <select id="experience">
+                    <option value="">Experience Level</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="senior">Senior Level</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard">
+            <aside class="job-filters">
+                <h3>Refine Search</h3>
+                <div class="filter-section">
+                    <h4>Salary Range</h4>
+                    <input type="range" min="0" max="200000" step="10000" id="salary-range">
+                    <span id="salary-value">$100,000</span>
+                </div>
+                <div class="filter-section">
+                    <h4>Posted Date</h4>
+                    <label><input type="radio" name="posted" value="24h"> Last 24 hours</label>
+                    <label><input type="radio" name="posted" value="week"> Last week</label>
+                    <label><input type="radio" name="posted" value="month"> Last month</label>
+                </div>
+            </aside>
+
+            <div id="job-list" class="job-listings">
+                <!-- Job opportunities will be displayed here -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading job opportunities...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Find your dream job with Rayin's Job Search</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rayin's Job Search. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
