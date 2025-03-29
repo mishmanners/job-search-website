@@ -2,6 +2,8 @@
 
 This project is a basic static website designed to help users search for available job opportunities. It features a search bar that allows users to filter job listings based on their criteria.
 
+Made for Rayin for the Brisbane AI Hack Day as a demo.
+
 ## Project Structure
 
 ```
